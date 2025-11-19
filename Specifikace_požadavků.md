@@ -1,9 +1,9 @@
 # Software Requirements Specification (SRS)
 
 **Název projektu:** Simulační model front v obchodním domě
-**Datum:** 10. listopadu 2025
+**Datum:** 18. listopadu 2025
 **Autoři:** Jan Boháček, Daniel Kryhut
-**Verze: 1.0.2**
+**Verze: 1.1.0**
 
 ---
 
@@ -25,7 +25,11 @@ Rozsah zahrnuje:
 
 ### 1.3 Definice a zkratky
 
+* CLI – Command Line Interface (konzolové rozhraní)
+
 ### 1.4 Reference na další dokumenty
+
+* Funkční specifikace (FS): Simulační model front v obchodním domě
 
 ## 2. Popis systému
 
@@ -73,7 +77,7 @@ Systém bude mít následující funkční a nefunkční požadavky.
 #### 3.1.2 Generování zákazníků
 
 **Popis:** Systém generuje zákazníky podle zvoleného rozdělení příchodů.
-**Vstupy:** Počet zákazníku za stanovený čas, čas simulace.
+**Vstupy:** Počet zákazníku za stanovený čas.
 **Výstupy:** Události příchodu zákazníků.
 **Chování:** Zákazníci jsou postupně přidáváni do front.
 
@@ -104,6 +108,9 @@ Systém bude mít následující funkční a nefunkční požadavky.
 
 ### 4.1 Výkonnost
 
+* Simulace musí být schopna zpracovat minimálně 10 000 zákazníků během jedné simulace do 5 sekund.
+* Měření metrik musí probíhat bez významného zpomalení běhu.
+
 ### 4.2 Spolehlivost
 
 * Systém musí poskytovat reprodukovatelné výsledky při stejném seed generátoru náhodných čísel.
@@ -123,9 +130,16 @@ Systém bude mít následující funkční a nefunkční požadavky.
 
 ## 5. Požadavky na hardware a software
 
+* Hardware: Standardní PC (min. 2 GB RAM, 2 GHz CPU)
+* Software:
+    * Operační systém: Windows / Linux / macOS
+    * C# 9.0 nebo vyšší
+
 ## 6. Přílohy
 
 ### 6.1 Diagram systému
+
+[ Zákazníci ] --> [ Fronty pokladen ] --> [ Pokladny ] --> [ Statistiky ] --> [ Vizualizace ]
 
 ### 6.2 Příklad obrazovky (konzolový výstup)
 Simulace dokončena.
@@ -137,5 +151,6 @@ Vytížení pokladen: 70%
 
 ### 6.3 Reference na FS
 
+Tento dokument SRS úzce navazuje na funkční specifikaci (FS) projektu a slouží jako výchozí podklad pro implementaci simulace front.
 
 *Konec dokumentu.*
