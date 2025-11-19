@@ -3,7 +3,7 @@
 **Název projektu:** Simulační model front v obchodním domě
 **Datum:** 10. listopadu 2025
 **Autoři:** Jan Boháček, Daniel Kryhut
-**Verze: 1.0.1**
+**Verze: 1.0.2**
 
 ---
 
@@ -128,6 +128,12 @@ Systém bude mít následující funkční a nefunkční požadavky.
 ### 6.1 Diagram systému
 
 ### 6.2 Příklad obrazovky (konzolový výstup)
+Simulace dokončena.
+Počet zákazníků: 480
+Počet pokladen: 20
+Průměrná doba čekání: 3.2 min
+Průměrná délka fronty: 2.1
+Vytížení pokladen: 70%
 
 ### 6.3 Reference na FS
 
