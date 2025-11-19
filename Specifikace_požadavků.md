@@ -1,8 +1,11 @@
 # Software Requirements Specification (SRS)
 
 **Název projektu:** Simulační model front v obchodním domě
+
 **Datum:** 18. listopadu 2025
+
 **Autoři:** Jan Boháček, Daniel Kryhut
+
 **Verze: 1.1.0**
 
 ---
@@ -70,36 +73,51 @@ Systém bude mít následující funkční a nefunkční požadavky.
 #### 3.1.1 Spuštění simulace
 
 **Popis:** Uživatel zadá parametry simulace.
+
 **Vstupy:** Parametry simulace (počet otevřených pokladen).
+
 **Výstupy:** Shrnutí nastavení a potvrzení spuštění simulace.
+
 **Chování:** Systém inicializuje události a spustí hlavní smyčku.
 
-#### 3.1.2 Generování zákazníků
+#### 3.1.2 Generování zákazníků                                         
 
 **Popis:** Systém generuje zákazníky podle zvoleného rozdělení příchodů.
+
 **Vstupy:** Počet zákazníku za stanovený čas.
+
 **Výstupy:** Události příchodu zákazníků.
+
 **Chování:** Zákazníci jsou postupně přidáváni do front.
 
 #### 3.1.3 Obsluha na pokladně
 
 **Popis:** Každý zákazník je přiřazen k pokladně, kde čeká, dokud není obsloužen.
+
 **Vstupy:** Počet položek.
+
 **Výstupy:** Čas dokončení obsluhy, uvolnění pokladny.
+
 **Chování:** Po ukončení obsluhy se spouští další zákazník z fronty.
 
 #### 3.1.4 Výpočet statistik
 
 **Popis:** Během simulace se průběžně ukládají metriky o čekání, frontách a vytížení.
+
 **Vstupy:** Časové události.
+
 **Výstupy:** Souhrnné statistiky po skončení simulace.
+
 **Chování:** Výsledky se zprůměrují a zobrazí na konci.
 
 #### 3.1.5 Konzolová vizualizace
 
 **Popis:** Uživatel vidí průběžné i finální výsledky simulace přímo v konzoli.
+
 **Vstupy:** Výsledné statistiky.
+
 **Výstupy:** Textový přehled.
+
 **Chování:** Po dokončení simulace se vypíše shrnutí, např. průměrná doba čekání a vytížení pokladen.
 
 ---
