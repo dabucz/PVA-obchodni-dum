@@ -3,7 +3,7 @@
 **Název projektu:** Simulační model front v obchodním domě
 **Datum:** 10. listopadu 2025
 **Autoři:** Jan Boháček, Daniel Kryhut
-**Verze: 1.0.0**
+**Verze: 1.0.1**
 
 ---
 
@@ -21,7 +21,7 @@ Rozsah zahrnuje:
 * Modelování příchodů zákazníků a jejich obsluhy.
 * Měření klíčových metrik (doba čekání, délka fronty, vytížení pokladen).
 * Vizualizaci výsledků v konzoli.
-* Možnost měnit vstupní parametry (počet pokladen, rychlost odbavení, intenzita příchozích zákazníků).
+* Možnost měnit vstupní parametry (počet pokladen).
 
 ### 1.3 Definice a zkratky
 
@@ -40,7 +40,7 @@ Systém bude mít následující funkční a nefunkční požadavky.
 #### Funkční požadavky (viz detailní kapitola 3)
 
 * Simulace příchodů a odchodů zákazníků.
-* Nastavení parametrů simulace (intenzita příchodů, doba odbavení, počet pokladen).
+* Nastavení parametrů simulace (počet pokladen).
 * Výpočet a zobrazení.
 * Export výsledků.
 
@@ -66,7 +66,7 @@ Systém bude mít následující funkční a nefunkční požadavky.
 #### 3.1.1 Spuštění simulace
 
 **Popis:** Uživatel zadá parametry simulace.
-**Vstupy:** Parametry simulace (čas, rozdělení, počty).
+**Vstupy:** Parametry simulace (počet otevřených pokladen).
 **Výstupy:** Shrnutí nastavení a potvrzení spuštění simulace.
 **Chování:** Systém inicializuje události a spustí hlavní smyčku.
 
@@ -80,7 +80,7 @@ Systém bude mít následující funkční a nefunkční požadavky.
 #### 3.1.3 Obsluha na pokladně
 
 **Popis:** Každý zákazník je přiřazen k pokladně, kde čeká, dokud není obsloužen.
-**Vstupy:** Počet položek, doba obsluhy na položku, režijní čas.
+**Vstupy:** Počet položek.
 **Výstupy:** Čas dokončení obsluhy, uvolnění pokladny.
 **Chování:** Po ukončení obsluhy se spouští další zákazník z fronty.
 
@@ -89,7 +89,7 @@ Systém bude mít následující funkční a nefunkční požadavky.
 **Popis:** Během simulace se průběžně ukládají metriky o čekání, frontách a vytížení.
 **Vstupy:** Časové události.
 **Výstupy:** Souhrnné statistiky po skončení simulace.
-**Chování:** Výsledky se agregují a zobrazí na konci běhu.
+**Chování:** Výsledky se zprůměrují a zobrazí na konci.
 
 #### 3.1.5 Konzolová vizualizace
 
