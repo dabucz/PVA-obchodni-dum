@@ -24,7 +24,7 @@ Program se spustí s parametry z příkazové řádky (CLI argumenty).
 **Navigace:**
 
 1.  Spuštění programu: `dotnet run`
-2.  Pokud argumenty chybí nebo jsou neplatné, zobrazí se nápověda a program se ukončí.
+2.  Pokud argumenty chybí nebo jsou neplatné, zobrazí upozornění pro zadání nových argumentů.
 
 **Formát Vstupů (CLI Argumenty):**
 
@@ -99,7 +99,7 @@ Výstup bude formátovaný s jasnými popisky, s desetinnými čísly zaokrouhle
 
 | Chybový stav | Popis | Chybová zpráva (Konzole) | Zotavení/Akce |
 | :--- | :--- | :--- | :--- |
-| **Neplatné argumenty** | Chybí nebo jsou nečíselné/mimo rozsah. | `Chyba: Neplatné argumenty. Zadejte kladná celá čísla. Použití: dotnet run <pokladny> <doba_simulace>...` | Program vypíše pro zadání nnového argumentu. |
+| **Neplatné argumenty** | Chybí nebo jsou nečíselné/mimo rozsah. | `Chyba: Neplatné argumenty. Zadejte kladná celá čísla. Použití: dotnet run <pokladny> <doba_simulace>...` | Program vypíše pro zadání nového argumentu. |
 | **Přetečení/Výkon** | Simulace trvá déle než stanovený limit (5s). | `Upozornění: Simulace trvala X sekund (překročena hranice 5s). Zvažte zkrácení doby simulace.` | Simulace se dokončí, ale vypíše se upozornění. |
 | **Interní chyba** | Neočekávaná výjimka. | `Kritická chyba: V simulaci došlo k neočekávané chybě: [Popis chyby].` | Program se ukončí. |
 
