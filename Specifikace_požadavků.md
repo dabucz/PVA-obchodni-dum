@@ -34,6 +34,8 @@ Rozsah zahrnuje:
 
 * Funkční specifikace (FS): Simulační model front v obchodním domě
 
+---
+
 ## 2. Popis systému
 
 ### 2.1 Přehled systému
@@ -154,6 +156,8 @@ Systém bude mít následující funkční a nefunkční požadavky.
     * C# 9.0 nebo vyšší
 
 ## 6. Přílohy
+
+---
 
 ### 6.1 Diagram systému
 
