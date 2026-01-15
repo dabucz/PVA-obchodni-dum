@@ -30,10 +30,10 @@ Program se spustí s parametry z příkazové řádky (CLI argumenty).
 
 | Argument | Popis | Typ | Omezení | Příklad |
 | :--- | :--- | :--- | :--- | :--- |
-| `počet_pokladen` | Počet otevřených pokladen. | `int` | $\ge 1$ | 5 |
+| `pocet_pokladen` | Počet otevřených pokladen. | `int` | $\ge 1$ | 5 |
 | `doba_simulace_minuty` | Celková doba běhu simulace v minutách. | `int` | $\ge 1$ | 60 |
-| `průměrný_interval_příchozích_sekundy` | Průměrný interval (sekundy) mezi příchody zákazníků (pro Poissonovo rozdělení). | `double` | $> 0$ | 30.0 |
-| `průměrný_počet_položek` | Průměrný počet položek v košíku (pro Gaussovo/Poissonovo rozdělení). | `double` | $> 0$ | 15.0 |
+| `prumerný_interval_prichozich_sekundy` | Průměrný interval (sekundy) mezi příchody zákazníků (pro Poissonovo rozdělení). | `double` | $> 0$ | 30.0 |
+| `prumerný_pocet_polozek` | Průměrný počet položek v košíku (pro Gaussovo/Poissonovo rozdělení). | `double` | $> 0$ | 15.0 |
 
 **Příklad spuštění:**
 `dotnet run`
